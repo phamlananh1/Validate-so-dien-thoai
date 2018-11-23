@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function sodienthoai(number) {
+        patt = /[(][0-9]{2}[)]-[(][0][0-9]{9}[)]/;
+        if (patt.test(number)) {
+            alert("Đúng định dạng");
+        } else {
+            alert("không đúng định dạng");
+        }
+    }
+    var number = prompt("nhập sđt:" );
+    sodienthoai(number);
+</script>
+</body>
+</html>
